@@ -1,0 +1,31 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+  @mixin max-width($max-width) {
+    max-width: $max-width;
+    width: 100%;  
+  }
+  @mixin max-height($max-height) {
+    max-width: $max-height;
+    width: 100%;  
+  }
+  @mixin box-shadow($box-shadow) {
+    box-shadow: $box-shadow;
+  }
+  @mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @mixin flex($gap){
+    display: flex;
+    align-items: center;
+    gap:$gap;
+  }
+  @mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
