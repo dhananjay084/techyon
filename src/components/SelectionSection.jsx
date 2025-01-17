@@ -4,9 +4,8 @@ import { BsList } from "react-icons/bs";
 import { LuTable } from "react-icons/lu";
 import { HiDotsVertical } from "react-icons/hi";
 
-const Selection = ({ selectedView, onViewChange }) => {
+const Selection = ({ selectedView, onViewChange,dropdownSelection }) => {
   const options = ["Option 1", "Option 2", "Option 3"];
-  const [dropdownSelection, setDropdownSelection] = useState("All Projects");
 
   const handleViewChange = (view) => {
     onViewChange(view); // Notify parent about the view change
@@ -18,7 +17,6 @@ const Selection = ({ selectedView, onViewChange }) => {
         <Dropdown
           label={dropdownSelection}
           options={options}
-          onChange={(selectedOption) => setDropdownSelection(selectedOption)}
         />
       </div>
       <div className="right-section">
